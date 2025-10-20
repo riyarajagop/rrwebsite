@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow">
+  <title>Other Interests — Riya Rajagopalan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand"><a href="index.html">Riya Rajagopalan</a></div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">Menu</button>
+    <nav id="primary-menu" class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research &amp; Internships</a>
+      <a href="service.html">Service</a>
+      <a href="school.html">School Involvement</a>
+      <a href="interests.html">Other Interests</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container">
+    <h1>Other Interests</h1>
+  </div>
+</main>
+
+<section id="guitar">
+  <div class="container">
+    <div class="section-header">
+      <h2>Guitar</h2>
+      <p class="section-desc">I am the lead electric guitarist in a 5‑person band. We perform at concerts, venues, county fairs, and even bowling alleys!</p>
+    </div>
+    <article class="card">
+      <div class="grid">
+        <figure class="col-4 media"><img src="assets/guitar_1.png" alt="Guitar photo 1 placeholder" /></figure>
+        <figure class="col-4 media"><img src="assets/guitar_2.png" alt="Guitar photo 2 placeholder" /></figure>
+        <figure class="col-4 media"><img src="assets/guitar_3.png" alt="Guitar photo 3 placeholder" /></figure>
+      </div>
+      <div class="media" style="margin-top:.75rem;">
+        <!-- Replace with your own MP4 or YouTube embed -->
+        <div class="card" style="background:#fff;">
+          <p class="small">Video: <a href="#" aria-disabled="true">Performance video (placeholder)</a></p>
+          <p class="small">To embed YouTube, replace with:<br/>
+          <code>&lt;iframe width="100%" height="420" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" allowfullscreen&gt;&lt;/iframe&gt;</code></p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="karate">
+  <div class="container">
+    <div class="section-header">
+      <h2>Karate</h2>
+    </div>
+    <article class="card">
+      <p>I am currently a Red Belt in Satori's Academy of Martial Arts, and working towards my Black Belt.</p>
+      <figure class="media"><img src="assets/karate.png" alt="Karate photo placeholder" /></figure>
+    </article>
+  </div>
+</section>
+
+<section id="fanfiction">
+  <div class="container">
+    <div class="section-header">
+      <h2>Fanfiction</h2>
+    </div>
+    <article class="card">
+      <p>
+        I’ve always loved murder mysteries, some of my favorite games include <em>Ace Attorney</em>, <em>Danganronpa</em>, and <em>Zero Escape</em>. In 10th grade I
+        made a list of 15+ murder‑mystery novels and finished them all. I’m also a huge escape‑room fan.
+      </p>
+      <p>
+        I write a murder‑mystery fanfiction on AO3: a “what‑if” scenario exploring how the story changes if a key character lives.
+        It’s an ongoing project with regular updates and an engaged readership.
+      </p>
+      <p class="small"><a href="#" aria-disabled="true">AO3 profile / story (placeholder)</a></p>
+    </article>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <p class="small">© <span id="year"></span> Riya Rajagopalan · <a href="mailto:riya.email@example.com">riya.email@example.com</a> · <a href="tel:+15551234567">+1 (555) 123‑4567</a></p>
+  </div>
+</footer>
+<script>
+  const toggle=document.querySelector('.nav-toggle');
+  const menu=document.querySelector('#primary-menu');
+  if(toggle&&menu){toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');});}
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);const el=document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,"",'#'+id);}});});
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>

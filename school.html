@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow">
+  <title>School Involvement — Riya Rajagopalan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand"><a href="index.html">Riya Rajagopalan</a></div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">Menu</button>
+    <nav id="primary-menu" class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research &amp; Internships</a>
+      <a href="service.html">Service</a>
+      <a href="school.html">School Involvement</a>
+      <a href="interests.html">Other Interests</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container">
+    <h1>School Involvement</h1>
+    <p class="section-desc">FBLA, Peer Mentor, and School Projects.</p>
+  </div>
+</main>
+
+<section id="fbla">
+  <div class="container">
+    <div class="section-header">
+      <h2>FBLA</h2>
+    </div>
+    <article class="card">
+      <p>
+        <strong>10th Grade:</strong> Introduction to Business Communication — 2nd in Regionals, 2nd at NJ SLC (States), 3rd at NLC (Nationals).<br/>
+        <strong>11th Grade:</strong> Insurance &amp; Risk Management — 1st in Regionals; attended NJ SLC.
+      </p>
+      <figure class="media"><img src="assets/home_hero.png" alt="FBLA photo placeholder" /></figure>
+    </article>
+  </div>
+</section>
+
+<section id="peer-mentor">
+  <div class="container">
+    <div class="section-header">
+      <h2>Peer Mentor</h2>
+    </div>
+    <article class="card">
+      <p>
+        Selected as 1 of 14 peer mentors in a class of 44. I helped in organizing the school Open House of 500+ attendees and answered
+        prospective student questions for 3 hours about coursework, clubs, and school culture.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="school-projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>School Projects</h2>
+    </div>
+    <article class="card">
+      <h3>Civil/Mechanical Engineering</h3>
+      <p>
+        <strong>Chocolate Bar Project:</strong> Surveyed preferences, designed a new bar, 3D‑printed the mold, and pitched to “investors” (teachers).
+        Our team placed 1st with our candy bar: <em>ICONIC</em>—a cone‑shaped bar filled with marshmallow fluff. It came in two variants, milk and dark chocolate. Each wrapper featured a different math-related joke.
+      </p>
+      <figure class="media"><img src="assets/home_hero.png" alt="Chocolate bar project photo placeholder" /></figure>
+      <p>
+        <strong>Rube Goldberg Machine:</strong> Built a 21‑step machine themed on <em>Spider‑Man</em>; placed 1st in the class.
+      </p>
+      <figure class="media"><img src="assets/home_hero.png" alt="Rube Goldberg project photo placeholder" /></figure>
+    </article>
+
+    <article class="card">
+      <h3>AP Stats Murder Mystery</h3>
+      <p>
+        A parody mystery where each suspect’s alibi aligned with a different inference test. Only one null hypothesis was rejected—
+        identifying the culprit. Creative storytelling to reinforce formal statistical reasoning.
+      </p>
+      <p class="small">Presentation: <a href="#" aria-disabled="true">View slides (placeholder)</a></p>
+    </article>
+
+    <article class="card">
+      <h3>English Papers</h3>
+      <ul class="list">
+        <li><a href="#" aria-disabled="true">Evaluating Alfred Adler’s Birth Order Theory (placeholder)</a></li>
+        <li><a href="#" aria-disabled="true"> Analyzing Isolation &amp; Control in <em>The Veldt</em> and <em>I Have No Mouth and I Must Scream, and how it relates to AI Technology today</em> (placeholder)</a></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <p class="small">© <span id="year"></span> Riya Rajagopalan · <a href="mailto:riya.email@example.com">riya.email@example.com</a> · <a href="tel:+15551234567">+1 (555) 123‑4567</a></p>
+  </div>
+</footer>
+<script>
+  const toggle=document.querySelector('.nav-toggle');
+  const menu=document.querySelector('#primary-menu');
+  if(toggle&&menu){toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');});}
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);const el=document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,"",'#'+id);}});});
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>
